@@ -1,0 +1,12 @@
+applications:
+  - name: my-ui5-node-app
+    path: .
+    memory: 512M
+    instances: 1
+    buildpacks:
+      - https://github.com/cloudfoundry/nodejs-buildpack
+    command: npm start
+    routes:
+      - route: my-ui5-node-app.cfapps.us10-001.hana.ondemand.com
+    env:
+      NODE_ENV: production

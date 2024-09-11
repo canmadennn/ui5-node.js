@@ -1,0 +1,16 @@
+{
+  "name": "my-ui5-node-app",
+  "version": "1.0.0",
+  "description": "A UI5 application with Node.js backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@sap/xsenv": "^5.2.0",
+    "@sap/xssec": "^4.2.4",
+    "axios": "^1.7.7",
+    "express": "^4.17.1",
+    "passport": "^0.7.0"
+  }
+}

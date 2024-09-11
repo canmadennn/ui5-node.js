@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller","sap/ui/model/json/JSONModel"],function(e,t){"use strict";return e.extend("myapp.controller.App",{onInit:function(){var e=new t;this.getView().setModel(e);this._fetchData()},_fetchData:function(){var e=this.getView().getModel();jQuery.ajax({url:"/api/hello",method:"GET",success:function(t){e.setData(t)},error:function(e,t,o){console.error("Error fetching data from server:",t,o)}})}})});
+//# sourceMappingURL=App.controller.js.map
